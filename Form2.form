@@ -1,0 +1,54 @@
+VERSION 5.00
+Begin VB.Form Form2 
+   Caption         =   "Form2"
+   ClientHeight    =   1785
+   ClientLeft      =   60
+   ClientTop       =   405
+   ClientWidth     =   4680
+   LinkTopic       =   "Form2"
+   ScaleHeight     =   1785
+   ScaleWidth      =   4680
+   StartUpPosition =   3  '系統預設值
+   Begin VB.CommandButton Command1 
+      Cancel          =   -1  'True
+      Caption         =   "關閉"
+      Height          =   375
+      Left            =   1800
+      TabIndex        =   3
+      Top             =   1320
+      Width           =   1095
+   End
+   Begin VB.Frame Frame1 
+      Caption         =   "關於"
+      Height          =   1095
+      Left            =   120
+      TabIndex        =   0
+      Top             =   120
+      Width           =   4455
+      Begin VB.Label Label2 
+         BackStyle       =   0  '透明
+         Caption         =   "本電腦程式受國際法保護！請勿盜用，支持正版。"
+         Height          =   495
+         Left            =   240
+         TabIndex        =   2
+         Top             =   600
+         Width           =   3855
+      End
+      Begin VB.Label Label1 
+         Caption         =   "開發：企鵝510208"
+         Height          =   255
+         Left            =   1200
+         TabIndex        =   1
+         Top             =   240
+         Width           =   1815
+      End
+   End
+End
+Attribute VB_Name = "Form2"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = False
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+Private Sub Command1_Click()
+Me.Hide
+End Sub
